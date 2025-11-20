@@ -27,7 +27,7 @@ if not api_key:
 def load_assets():
     model = pc.load(open('Training/Models/model.pkl','rb'))
     scaler = pc.load(open('Training/Scaler/scaler.pkl','rb'))
-    encoder = pc.load(open('Training/encoders/encoder.pkl','rb'))
+    encoder = pc.load(open('Training/Encoders/encoder.pkl','rb'))
 
     return model, scaler, encoder
 
