@@ -78,12 +78,13 @@ into a JSON object with the following fields:
 - If multiple tickers appear, choose the first one.
 - All numeric values must be numbers (not strings).
 - Ensure the final JSON contains **all fields with inferred values**.
-- If anything is missing so assume it
+- If any field is missing in the sentence, assume or estimate a reasonable value.
 
 ### User sentence and date:
 {sentence} and {date}
 
 ### JSON Output:
+
 """)
     
     llm = ChatGroq(model="llama-3.1-8b-instant")
