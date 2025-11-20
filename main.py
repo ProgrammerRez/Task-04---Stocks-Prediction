@@ -154,4 +154,5 @@ if user_input:=st.chat_input():
             }).content
 
             st.markdown(f"**Analysis / Critique:** {critique_response}")
+        st.session_state.history.append({'role':'ai','content':prediction + critique_response})
         
