@@ -5,3 +5,8 @@ scikit-learn
 matplotlib
 seaborn
 ipykernel
+langchain==0.3.20
+python-dotenv
+streamlit
+langchain-groq==0.3.8
+langgraph==0.3.2
