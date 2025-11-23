@@ -87,7 +87,7 @@ into a JSON object with the following fields:
 
 """)
     
-    llm = ChatGroq(model="llama-3.1-8b-instant")
+    llm = ChatGroq(model="llama-3.1-8b-instant",api_key=api_key)
     chain = prompt | llm
     return chain
 
@@ -146,7 +146,7 @@ if user_input:=st.chat_input():
                 Provide a concise justification, reasoning, or critique of the prediction in simple terms.
                 Return as plain text.
                 """)
-            llm = ChatGroq(model="llama-3.1-8b-instant")
+            llm = ChatGroq(model="llama-3.1-8b-instant",api_key=api_key)
             critique_chain = critique_prompt_template | llm
             critique_response = critique_chain.invoke({
                 'user_input': user_input,
