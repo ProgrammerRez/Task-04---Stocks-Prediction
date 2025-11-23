@@ -17,7 +17,7 @@ st.set_page_config(page_title='Stock Predictions for Google, Apple and Microsoft
 st.title('Stock Predictor & Insight: Google, Apple & Microsoft')
 
 with st.sidebar:
-    api_key = os.getenv('GROQ_API_KEY') or st.text_input('GROQ_API_KEY',type='password')
+    api_key = st.text_input('GROQ_API_KEY',type='password')
 
 if not api_key:
     st.warning('Please insert the Groq API Key into the sidebar')
